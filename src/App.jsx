@@ -9,7 +9,7 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";  
 import About from "./components/About";  
 import { Provider } from "react-redux";  
-import appStore from "./utils/appstore";  
+import appStore from "./utils/appStore";  
 import Cart from "./components/Cart";  
 import Footer from "./components/Footer";  
 import OrderConfirmation from "./components/OrderConfirmation";   
@@ -19,13 +19,13 @@ const AppLayout = () => {
   return (  
     <Provider store={appStore}>  
       <div className="bg-pink-50 min-h-screen">  
-        <Header />  
-        <Outlet />  
-        <Footer />   
-      </div>  
-    </Provider>  
-  );   
-};  
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
+  );
+};
 
 const appRouter = createBrowserRouter([  
   {  
